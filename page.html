@@ -1,0 +1,292 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="page.css" media="only screen and (max-width: 1922px)" type="text/css" href="page.css">
+</head>
+<style>
+    * {
+        box box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+    body {
+        margin: 10px;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 100%;
+        background: rgb(27, 214, 189);
+    }
+    
+    nav image {
+        margin-right: 50%;
+        display: block;
+    }
+    
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px 15px;
+        color: rgb(22, 71, 177);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    
+    .boxcontainer {
+        margin: auto;
+        margin-top: 1.5%;
+        margin-left: 6%;
+        position: relative;
+        width: 600px;
+        height: 50px;
+        border: 5px solid rgb(53, 151, 231);
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+    
+    .containerbox {
+        margin: auto;
+        margin-top: -2.5%;
+        margin-left: 32.5%;
+        position: relative;
+        width: 600px;
+        height: 50px;
+        border: 5px solid rgb(53, 151, 231);
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+    
+    .button {
+        margin-top: 0%;
+        padding: 1% 12%;
+        text-align: left;
+    }
+    
+    .summary {
+        border: 3px;
+        background: gray;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-family: monospace;
+        transition: 0.8s;
+    }
+    
+    .helpdocs {
+        border: 3px;
+        background: gray;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-family: monospace;
+        transition: 0.8s;
+    }
+    
+    .DevRequest {
+        border: 3px;
+        background: gray;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-family: monospace;
+        transition: 0.8s;
+    }
+    
+    .MyDraft {
+        border: 3px;
+        background: gray;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-family: monospace;
+        transition: 0.8s;
+    }
+    
+    .MyArticles {
+        border: 3px;
+        background: gray;
+        padding: 10px 30px;
+        font-size: 20px;
+        font-family: monospace;
+        transition: 0.8s;
+    }
+    
+    .summary:hover,
+    .helpdocs:hover,
+    .DevRequest:hover,
+    .MyDraft:hover,
+    .MyArticles:hover {
+        color: rgb(19, 22, 219);
+    }
+    
+    .tabs {
+        width: 50%;
+        height: 10%;
+    }
+    
+    .tabs .button {
+        height: 15%;
+    }
+    
+    .tabs .button .tabcontent {
+        width: 12.5%;
+        margin-top: 20%;
+        margin-left: 0%;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        padding: 30px;
+    }
+    
+    .card2 {
+        position: relative;
+        margin-top: .2%;
+        margin-left: 10%;
+        margin-right: 30%;
+        border-width: 0px;
+        background: rgba(231, 210, 210, 0.815);
+        width: 20%;
+        height: 9%;
+        padding: 10px 20px;
+        font-size: 50px;
+        font-family: sans-serif;
+        border: solid rgb(190, 112, 112);
+        border-radius: 10px;
+    }
+    
+    .panelelements {
+        margin-left: 35%;
+        width: 50%;
+        height: 47%;
+        background: lightseagreen;
+        border: solid 5px #3883c9;
+        border-radius: 10px;
+    }
+    
+    .panelelements .buttonrowpanel {
+        padding: 1% 5%;
+        width: 80%;
+        background: salmon;
+        border: solid 5px cornflowerblue;
+        font-size: 20px;
+    }
+    
+    .panelelements .buttonrowpanel2 {
+        padding: 1% 5%;
+        width: 80%;
+        border: solid cornflowerblue;
+        background: sandybrown;
+        font-size: 20px;
+    }
+    
+    .panelelements .buttonrowpanel3 {
+        padding: 1% 5%;
+        width: 80%;
+        border: solid cornflowerblue;
+        background: sandybrown;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <nav> <img src="monkey.png" height="10%" width="100%" alt="Logo">
+
+
+        <a href="#Home">MyHome
+            <img src="home.jpg"  height="8%" width="70%" alt="myhome">
+        </a>
+        <a href="#Freshers">Freshers
+            <img src="freshers.png"  height="8%" width="70%" alt="freshers">
+        </a>
+        <a href="#Issues">issues
+            <img src="bug.jpg"  height="8%" width="70%" alt="issues">
+        </a>
+        <a href="#DevRequest">DevRequest
+            <img src="flag.jpg"  height="8%" width="70%" alt="devrequest">
+        </a>
+        <a href="#Product">Products
+            <img src="office.png"  height="8%" width="70%" alt="products">
+        </a>
+        <a href="#Signups">Signups
+            <img src="profile.png"  height="8%" width="70%" alt="Signups">
+        </a>
+        <a href="#Knowledge">Knowledge
+            <img src="grad.png"  height="8%" width="70%" alt="Knowledge">
+        </a>
+    </nav>
+    <div class="boxcontainer">
+        <table class="elementcontainer">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Search Org or org user" class="Search">
+                </td>
+                <td>
+                    <a href="#"><img src="search1.jpg" width="10%" height="10%" alt="Search Org or org user">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="containerbox">
+        <table class="elementcontainer">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Search customer request/feature/devreq" class="Search">
+                </td>
+                <td>
+                    <a href="#"><img src="pagesearch.jpg" width="10%" height="10%" alt="Search customer request/feature/devreq">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="tabs">
+        <div class="button">
+            <button class="summary">summary</button>
+            <button class="helpdocs">HelpDocs</button>
+            <button class="DevRequest">DevRequest</button>
+            <button class="MyDraft">MyDraft</button>
+            <button class="MyArticles">MyArticles</button>
+        </div>
+        <div class="tabcontent">summary:content</div>
+        <div class="tabcontent">HelpDocs:content</div>
+        <div class="tabcontent">DevRequest:content</div>
+        <div class="tabcontent">MyDraft:content</div>
+        <div class="tabcontent">MyArticles:content</div>
+    </div>
+    <div class="panelelements">
+        <h2> Admin Guide</h2>
+        <h4> The admin guide of the helpdocs</h4>
+        <div class="buttonrowpanel">
+            <button type="Org module"><h2>Org module</h2><h4>Manage onboarding and exit processes</h4></button>
+            <button type="Performance"><h2>Performance</h2><h4>Manage employee objective,skills</h4></button>
+            <button type="Time attended"><h2>Time Attended</h2><h4>Configure leave and attendance tracking policies</h4></button>
+        </div>
+        <div class="buttonrowpanel2">
+            <button type="Project"><h2>Project</h2><h4>Manage tasks,timesheets and all other functions</h4></button>
+            <button type="Payroll"><h2>Payroll</h2><h4>Resolves all your payroll related queries</h4></button>
+            <button type="Settings"><h2>Settings</h2><h4>You can define all your settings here</h4></button>
+        </div>
+        <div class="buttonrowpanel3">
+            <button type="Addnew"><h1>+</h1><h3>Add new</h3></button>
+        </div>
+    </div>
+
+    <div class="card2">
+        <button type="Admin guide"><h3>Admin guide</h3><h5>6 folders</h5></button>
+    </div>
+    <div class="card2">
+        <button type="Manager guide"><h3>Manager guide</h3><h5>9 folders</h5></button>
+    </div>
+    <div class="card2">
+        <button type="Empployee guide"><h3>Employee guide</h3><h5>8 folders</h5></button>
+    </div>
+    <div class="card2">
+        <button type="CS guide"><h3>CS guide</h3><h5>11 folders</h5></button>
+    </div>
+</body>
+
+</html>
